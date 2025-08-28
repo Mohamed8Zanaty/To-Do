@@ -3,6 +3,14 @@
     <style name="Base.Theme.ToDo" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">#e91e63</item>
+        <item name="colorPrimaryDark">#C2185B</item>
+        <item name="colorAccent">#448AFF</item>
+        <item name="android:textColorPrimary">#212121</item>
+        <item name="android:textColorSecondary">#757575</item>
+        <item name="dividerColor">#BDBDBD</item>
+        
     </style>
 
     <style name="Theme.ToDo" parent="Base.Theme.ToDo" />
