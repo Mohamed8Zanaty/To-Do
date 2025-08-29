@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.CheckBox
 import androidx.recyclerview.widget.RecyclerView
 
-class DoneTasksAdapter(private val tasks : List<Task>)
+class DoneTasksAdapter(private val tasks : MutableList<Task>)
     : RecyclerView.Adapter<DoneTasksAdapter.TaskViewHolder>()
 {
     override fun onCreateViewHolder(
@@ -19,6 +19,7 @@ class DoneTasksAdapter(private val tasks : List<Task>)
 
         return TaskViewHolder(view)
     }
+    var onEmptyState: ((isEmpty: Boolean) -> Unit)? = null
 
     override fun onBindViewHolder(
         holder: TaskViewHolder,
